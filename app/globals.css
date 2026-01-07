@@ -28,11 +28,36 @@
   /* custom colors */
   --color-accent: #FF383C;
   --color-star:   #FFCB29;
+
+  --color-violet-light: #F4ECFF;
+  --color-violet-dark:  #8A38F5;
+
+  --color-orange-light: #FF8400;
+  --color-orange-dark:  #DD7300;
+
+  --color-cyan-light:   #EAF8FF;
+  --color-cyan-dark:    #1695D4;
+
+  --color-blue-light:   #222DAD;
+  --color-blue-dark:    #2533D4;
+
+  --color-banana-light: #F2D727;
+  --color-banana-dark:  #846C15;
+
+  --color-green-light:  #EBF9F2;
+  --color-green-dark:   #08A95E;
+
+  --color-red-light:    #FFEFEC;
+
+  /* fonts */
+  --font-sm: var(--font-golos-sb);
+  --font-md: var(--font-golos-md);
+  --font-rg: var(--font-golos-rg);
 }
 
 body {
   color: var(--color-gray-900);
-  background-color: white;
+  background-color: #fff;
 }
 
 /* Cursor customisation */

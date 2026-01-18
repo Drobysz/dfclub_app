@@ -1,0 +1,26 @@
+ @reference "tailwindcss";
+
+.btn_view {
+	@apply h-fit rounded-4xl cursor-pointer;
+}
+
+.btn_anim {
+	transition:
+		opacity 0.3s linear,
+		transform 0.2s ease-in;
+	-moz-transition:
+		opacity 0.3s linear,
+		transform 0.2s ease-in;
+	-webkit-transition:
+		opacity 0.3s linear,
+		transform 0.2s ease-in;
+}
+
+.btn_anim:hover {
+	opacity: 0.9;
+	transform: scale(1.012);
+}
+
+.btn_anim:active {
+	transform: scale(0.99);
+}

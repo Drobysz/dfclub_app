@@ -1,0 +1,19 @@
+[
+    {
+        "title": "TikTok",
+        "img": "/social/tik_tok.svg",
+        "link": "https://www.tiktok.com/"
+    },
+
+    {
+        "title": "YouTube",
+        "img": "/social/yt.svg",
+        "link": "https://youtube.com"
+    },
+
+    {
+        "title": "Telegram",
+        "img": "/social/telegram.svg",
+        "link": "https://t.me/gogonga"
+    }
+]

@@ -1,0 +1,7 @@
+@reference "tailwindcss";
+
+.dur_tag {
+	@apply flex gap-1
+		p-2 rounded-lg items-center
+		h-fit w-fit text-sm;
+}

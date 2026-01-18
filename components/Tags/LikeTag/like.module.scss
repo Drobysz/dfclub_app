@@ -1,0 +1,17 @@
+.like:active {
+	transition: box-shadow 0.3s ease-out;
+}
+
+.like_inner * {
+	transition: transform 0.2s ease-out;
+}
+
+.like:active {
+	box-shadow:
+		rgba(255, 56, 60, 0.25) 0px 12px 9px -12px inset,
+		rgba(255, 56, 60, 0.3) 0px 9px 18px -9px inset;
+}
+
+.like_inner:active * {
+	transform: scale(1.05)
+}

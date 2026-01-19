@@ -2,18 +2,17 @@
 
 import { useState, useEffect } from "react";
 
-import Link from "next/link";
-
 import { motion } from "framer-motion";
 import cn from "classnames";
+import styles from "./gc.module.scss";
 
 import { GCprops, Direction } from "./GC.props";
 
-export const GleamingCard = ({
+export const GleamingFrame = ({
   children,
-  className,
   duration = 1,
   clockwise = true,
+  className,
   ...props
 }: GCprops)=> {
   const [hovered, setHovered] = useState(false);
@@ -21,18 +20,26 @@ export const GleamingCard = ({
 
   const rotateDirection = (currentDirection: Direction): Direction => {
     const nextDirection = clockwise
-      ? (currentDirection + 1) % 4
-      : (currentDirection - 1 + 4) % 4;
+      ? (currentDirection + 1) % 8
+      : (currentDirection - 1 + 8) % 8;
     return nextDirection
   };
 
+  const lightStaticData = "hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%";
+
   const movingMap: Record<Direction, string> = {
-    [Direction.top]: "radial-gradient(20.7% 50% at 50% 0%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
-    [Direction.right]:
-      "radial-gradient(16.2% 41.199999999999996% at 100% 50%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
+    [Direction.top]: `radial-gradient(20.7% 50% at 50% 0%, ${lightStaticData}`,
+    [Direction.rightTop]:
+      `radial-gradient(16.2% 41.199999999999996% at 100% 0%, ${lightStaticData}`,
+    [Direction.rightCenter]:
+      `radial-gradient(16.2% 41.199999999999996% at 100% 50%, ${lightStaticData}`,
+    [Direction.rightBottom]:
+      `radial-gradient(16.2% 41.199999999999996% at 100% 100%, ${lightStaticData}`,
     [Direction.bottom]:
-      "radial-gradient(20.7% 50% at 50% 100%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
-    [Direction.left]: "radial-gradient(16.6% 43.1% at 0% 50%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
+      `radial-gradient(20.7% 50% at 50% 100%, ${lightStaticData}`,
+    [Direction.leftTop]:    `radial-gradient(16.6% 43.1% at 0% 100%, ${lightStaticData})`,
+    [Direction.leftCenter]: `radial-gradient(16.6% 43.1% at 0% 50%, ${lightStaticData})`,
+    [Direction.leftBottom]: `radial-gradient(16.6% 43.1% at 0% 0%, ${lightStaticData})`,
   };
 
   const highlight =
@@ -46,27 +53,19 @@ export const GleamingCard = ({
       return () => clearInterval(interval);
     }
   }, [hovered]);
+
   return (
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className={cn(
-        "relative flex rounded-3xl border content-center bg-black/20 hover:bg-black/10 transition duration-500 dark:bg-white/20 items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-px box-decoration-clone w-fit"
-      )}
+      className={cn(styles.frame, className)}
       {...props}
     >
-      <div
-        className={cn(
-          "text-white z-10 bg-gray-800 rounded-[inherit]",
-          className
-        )}
-      >
-        	{children}
+      <div className={styles.children_view}>
+        {children}
       </div>
       <motion.div
-        className={cn(
-          "flex-none inset-0 overflow-hidden absolute z-0 rounded-[inherit] blur-xs h-full w-full"
-        )}
+        className={styles.light_anim}
         initial={{ background: movingMap[direction] }}
         animate={{
           background: hovered
@@ -75,7 +74,6 @@ export const GleamingCard = ({
         }}
         transition={{ ease: "linear", duration: duration }}
       />
-      <div className="bg-black absolute z-1 flex-none inset-0.5 rounded-[100px]" />
     </div>
   );
 }

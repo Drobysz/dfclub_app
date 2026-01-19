@@ -8,7 +8,11 @@ export interface GCprops extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement
 
 export enum Direction {
     top, 
-    right,
+    rightTop,
+    rightCenter,
+    rightBottom,
     bottom,
-    left
+    leftTop,
+    leftCenter,
+    leftBottom
 };

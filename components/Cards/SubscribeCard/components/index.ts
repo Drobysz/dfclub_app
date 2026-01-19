@@ -4,3 +4,4 @@ export * from "./Price";
 export * from "./Tick";
 export * from "./ShortDescription";
 export * from "./SubServices/SubServices";
+export * from "./SubscribeBody/SubscribeBody";

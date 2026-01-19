@@ -6,7 +6,7 @@ import {
 	InfoBlock, CheckBox, CheckBox2,
 	ActivityTag, CourseTag, ComplexTag,
 	DurationTag, TransactionTag, ProfileIcon,
-	Rating, SMbar, Comment, Loading, GleamingCard,
+	Rating, SMbar, Comment, Loading, GleamingFrame,
 	SubscribeCard
 } from "@/components/index";
 import sm from "../json/sm_list.json"
@@ -133,17 +133,11 @@ export default function Home() {
 				<Loading />
 			</div>
 
-			<div className="bg-gray-700 p-4 w-fit">
-				<GleamingCard
-					className="px-3 py-2 w-fit h-fit"
-					clockwise
-				>
-					test
-				</GleamingCard>
-			</div>
-
-			<div className="bg-gray-700 p-4 w-fit">
-				<SubscribeCard />
+			<div className="bg-gray-700 p-4 flex flex-col items-center">
+				<SubscribeCard  fit/>
+				<div className="p-20 w-full">
+					<SubscribeCard bgColor="green"/>
+				</div>
 			</div>
 
 			<div className="h-30"/>

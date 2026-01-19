@@ -18,5 +18,5 @@ export * from "./Rating/Rating";
 export * from "./SMbar/SMbar";
 export * from "./Comment/Comment";
 export * from "./Loading/Loading";
-export * from "./Cards/GleamingCard/GleamingCard";
+export * from "./Cards/GleamingCard/GleamingFrame";
 export * from "./Cards/SubscribeCard/SubscribeCard";

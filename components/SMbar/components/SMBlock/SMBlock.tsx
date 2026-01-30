@@ -24,13 +24,13 @@ export const SMBlock = ({
     const blockTransform = useTransform(
         distance,
         [-150, 0, 150],
-        [30, 50, 30]
+        [40, 60, 40]
     );
 
     const iconTransform = useTransform(
         distance,
         [-150, 0, 150],
-        [30, 50, 30]
+        [40, 60, 40]
     );
 
     const transition = {

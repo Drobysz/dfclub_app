@@ -16,7 +16,7 @@ export const Comment = ({
 	return (
 		<ModalWindow
 			tag="section"
-			className="p-8 flex flex-col gap-8 w-141 h-93"
+			className="shrink-0 p-8 flex flex-col gap-8 w-122 h-93"
 		>
 			<Header
 				date={date}

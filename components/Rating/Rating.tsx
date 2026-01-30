@@ -47,6 +47,7 @@ export const Rating = ({ isEditable = false, rating, setRating, ...props }: Rati
 						className={"transition-all duration-100"}
 						note={i <= displayRating - 1 ? 5 : 0}
 						tabIndex={isEditable ? 0 : -1}
+						uid={`rating-${rating}-star-${i}`}
 					/>
 				</span>
 			))}

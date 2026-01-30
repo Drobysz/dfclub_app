@@ -5,12 +5,14 @@ import cn from "classnames";
 export const Arrow = ({
 	mode="light",
 	dir,
+	className,
 	...props
 }: ArrowProps)=> {
 	return (
 		<div
 			{...props}
 			className={cn(
+				className,
 				"rounded-full w-10 h-10 cursor-pointer",
 				"flex justify-center items-center",
 				"active:opacity-85 active:scale-[0.97] hover:scale-[1.04]",

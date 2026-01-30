@@ -1,3 +1,5 @@
+"use client"
+
 import { GleamingFrame } from "@/components/index";
 import { 
 	SubscribeBtn,
@@ -18,7 +20,7 @@ export const SubscribeCard = ({
 	const Wrapper = bgColor == "dark" ? GleamingFrame : "div";
 
 	return (
-		<Wrapper className={`rounded-3xl w-${fit ? "fit" : "full"}`}>
+		<Wrapper className={`rounded-3xl ${fit ? "w-99.25" : "w-full"}`}>
 			<SubscribeBody bgColor={bgColor}>
 				<div className="flex flex-col gap-8">
 					<SubscribeTag bgColor={bgColor}/>

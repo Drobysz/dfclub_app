@@ -58,12 +58,3 @@ body {
   color: var(--color-gray-900);
   background-color: #fff;
 }
-
-/* Cursor customisation */
-body {
-    cursor: url('/cursor/mouse.png') 0 0, pointer;
-};
-
-.cursor-pointer {
-    cursor: url('/cursor/pointer.png') 0 0, pointer;
-};

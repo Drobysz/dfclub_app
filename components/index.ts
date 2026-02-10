@@ -22,3 +22,4 @@ export * from "./GleamingFrame/GleamingFrame";
 export * from "./Cards/SubscribeCard/SubscribeCard";
 export * from "./UnderlinedLink/UnderlinedLink";
 export * from "./Lamp/Lamp";
+export * from "./LiquidGlass/LiquidGlass";

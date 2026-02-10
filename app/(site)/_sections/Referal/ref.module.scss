@@ -1,0 +1,6 @@
+@reference "tailwindcss";
+
+.ref {
+	@apply flex flex-col
+		gap-16 items-center;
+}

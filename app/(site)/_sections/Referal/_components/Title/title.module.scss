@@ -1,0 +1,8 @@
+@reference "tailwindcss";
+
+.title {
+	@apply text-white flex
+		flex-col gap-8
+		justify-center
+		text-center;
+}

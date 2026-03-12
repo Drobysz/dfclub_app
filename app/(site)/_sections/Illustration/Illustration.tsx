@@ -4,7 +4,7 @@ import { Title } from "./_components/Title";
 
 export const Illustration = ()=> {
 	return (
-		<div className="flex justify-center px-8 pb-8">
+		<div className="flex justify-center px-8">
 			<section
 				className={styles.sect}
 			>

@@ -42,29 +42,31 @@ export const NavBar = () => {
     const [hover, setHover] = useState(false);
 
     return (
-        <ul
-            onMouseEnter={()=> setHover(true)}
-            onMouseLeave={() => {
-                setPosition(positionClicked);
-                setHover(false);
-            }}
-            className={styles.navbar_body}
-        >
-            {tabs.map((tab) => (
-                    <Tab
-                        key={tab.href}
-                        href={tab.href}
-                        isActive={pathname === tab.href}
-                        isBarHovered={hover}
-                        setPosition={setPosition}
-                        setPositionClicked={setPositionClicked}
-                    >
-                        {tab.label}
-                    </Tab>
-            ))}
+        <nav>
+            <ul
+                onMouseEnter={()=> setHover(true)}
+                onMouseLeave={() => {
+                    setPosition(positionClicked);
+                    setHover(false);
+                }}
+                className={styles.navbar_body}
+            >
+                {tabs.map((tab) => (
+                        <Tab
+                            key={tab.href}
+                            href={tab.href}
+                            isActive={pathname === tab.href}
+                            isBarHovered={hover}
+                            setPosition={setPosition}
+                            setPositionClicked={setPositionClicked}
+                        >
+                            {tab.label}
+                        </Tab>
+                ))}
 
-            <Cursor position={position} />
-        </ul>
+                <Cursor position={position} />
+            </ul>
+        </nav>
     );
 };
   

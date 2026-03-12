@@ -15,7 +15,7 @@ export const Comment = ({
 }: CommentProps)=> {
 	return (
 		<ModalWindow
-			tag="section"
+			tag="div"
 			className="shrink-0 p-8 flex flex-col gap-8 w-122 h-93"
 		>
 			<Header

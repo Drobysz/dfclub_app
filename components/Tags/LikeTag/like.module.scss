@@ -1,9 +1,23 @@
+@reference "tailwindcss";
+
+.body {
+	@apply w-10 h-10 flex
+		justify-center items-center
+		shrink-0 bg-white;
+}
+
 .like:active {
 	transition: box-shadow 0.3s ease-out;
 }
 
 .like_inner * {
 	transition: transform 0.2s ease-out;
+}
+
+.like {
+	box-shadow:
+		rgba(255, 56, 60, 0.25) 0px 12px 9px -12px inset,
+		rgba(255, 56, 60, 0.3) 0px 9px 18px -9px inset;
 }
 
 .like:active {

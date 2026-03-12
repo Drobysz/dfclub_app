@@ -1,0 +1,6 @@
+@reference "tailwindcss";
+
+.body {
+	@apply flex gap-2 items-center
+		px-2.5 py-2 w-fit h-fit bg-white;
+}

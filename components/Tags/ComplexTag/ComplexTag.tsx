@@ -1,10 +1,11 @@
 import { prime_semibold } from "@/fonts/fonts";
 import cn from "classnames";
+import { complexities } from "@/interface";
 
 export const ComplexTag = ({
 	complexity
 }: {
-	complexity: "Легкая" | "Средняя" | "Сложная"
+	complexity: complexities
 })=> {
 	return (
 		<span className={cn(

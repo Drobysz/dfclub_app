@@ -1,0 +1,11 @@
+@reference "tailwindcss";
+
+
+.body {
+	@apply p-4 w-full;
+}
+
+.tags {
+	@apply flex justify-between
+		items-center;
+}

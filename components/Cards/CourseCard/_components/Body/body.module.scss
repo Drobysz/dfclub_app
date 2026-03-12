@@ -1,0 +1,6 @@
+@reference "tailwindcss";
+
+.body {
+	@apply rounded-4xl h-fit w-85.25
+		overflow-hidden bg-white;
+}

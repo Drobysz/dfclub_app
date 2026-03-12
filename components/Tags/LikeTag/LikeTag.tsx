@@ -5,14 +5,25 @@ import { useState } from "react";
 import styles from "./like.module.scss";
 import cn from "classnames";
 
-export const LikeTag = ()=> {
-	const [liked, setLiked] = useState(false);
+export const LikeTag = ({
+	isLiked = false,
+	className
+}: {
+	isLiked?: boolean,
+	className?: string;
+})=> {
+	const [liked, setLiked] = useState(isLiked);
 	const stroke = liked ? "none" : "#24272D";
 	const fill   = liked ? "#FF383C" : "none";
 
 	return (
 		<ModalWindow
-			className={cn("w-10 h-10 flex justify-center items-center", liked && styles.like, styles.like_inner)}
+			className={cn(
+				styles.body,
+				liked && styles.like,
+				styles.like_inner,
+				className
+			)}
 			onPointerDown={(e)=>{
 				e.preventDefault()
 				setLiked((v)=> !v)

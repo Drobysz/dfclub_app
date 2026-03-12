@@ -1,0 +1,6 @@
+@reference "tailwindcss";
+
+.body {
+	@apply flex flex-col
+		text-sm;
+}

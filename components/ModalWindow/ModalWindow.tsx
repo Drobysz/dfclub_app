@@ -14,22 +14,24 @@ export const ModalWindow = ({
 				<span
 					{...props}
 					className={cn(
-						className, styles.mod_window_span_view
+						className,
+						styles.mod_window_span_view
 					)}
 				>
 					{children}
 				</span>
 			}
 
-			{tag == "section" &&
-				<section
+			{tag == "div" &&
+				<div
 					{...props}
 					className={cn(
-						className, styles.mod_window_section_view
+						className,
+						styles.mod_window_section_view
 					)}
 				>
 					{children}
-				</section>
+				</div>
 			}
 		</>
 	)

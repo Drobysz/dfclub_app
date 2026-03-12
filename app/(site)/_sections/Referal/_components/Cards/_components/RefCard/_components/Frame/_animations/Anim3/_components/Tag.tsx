@@ -17,7 +17,7 @@ export const Tag = ({
 }: TagProps)=> {
 	const rotated = animStyles.rotation[rotationAnchor].rotated;
 	const initial = animStyles.rotation[rotationAnchor].initial;
-	const anchor = animStyles.anchor[rotationAnchor]
+	const anchor = animStyles.anchor[rotationAnchor];
 
 	return (
 		<motion.div

@@ -12,7 +12,7 @@ export const InfoWindow = ({ extended, setExtended, children }: InfoWindowProps)
 				styles.window, "gap-0",
 				extended && "gap-4"
 			)}
-			tag="section"
+			tag="div"
 			onClick={()=> {
 				setExtended((v) => !v)
 			}}

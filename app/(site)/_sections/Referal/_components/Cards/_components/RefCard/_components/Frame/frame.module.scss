@@ -1,8 +1,0 @@
-@reference "tailwindcss";
-
-.frame {
-	@apply h-37.75 w-full shrink-0 flex
-		justify-center items-center
-		rounded-3xl bg-gray-100
-		overflow-hidden relative;
-}

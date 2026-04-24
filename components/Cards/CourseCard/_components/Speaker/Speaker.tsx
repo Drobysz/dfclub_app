@@ -13,6 +13,7 @@ export const Speaker = ({
 		>
 			<ProfileIcon
 				src={avatar}
+				isActive={false}
 			/>
 			<Title
 				name={name}

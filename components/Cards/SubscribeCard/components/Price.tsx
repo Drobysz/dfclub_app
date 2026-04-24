@@ -1,7 +1,10 @@
 import { prime_regular } from "@/fonts/fonts";
 import cn from "classnames";
+import { useTranslations } from "next-intl";
 
 export const Price = ({ bgColor }: { bgColor: "green" | "dark" })=> {
+	const t = useTranslations('main');
+
 	return (
 		<span className={cn("flex items-center gap-2")}>
 			<span className={cn(
@@ -20,7 +23,7 @@ export const Price = ({ bgColor }: { bgColor: "green" | "dark" })=> {
 					["text-gray-800"]: bgColor == "green"
 				}
 			)}>
-				/месяц
+				/{t('sub_crd_pricetag')}
 			</span>
 		</span>
 	)

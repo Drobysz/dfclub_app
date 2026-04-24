@@ -4,7 +4,6 @@
   position: relative;
   display: flex;
   font-weight: 600;
-  overflow: hidden;
   isolation: isolate;
   background: rgba(255, 255, 255, 0.08);
   // border: 0.5px solid rgba(255, 255, 255, 0.35);
@@ -36,9 +35,6 @@
   inset: 0;
   z-index: 2;
   border-radius: 2rem;
-
-  overflow: hidden;
-
   box-shadow:
     inset 2px 2px 1px 0 rgba(255, 255, 255, 0.5),
     inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
@@ -53,5 +49,4 @@
   position: absolute;
   width: 0;
   height: 0;
-  overflow: hidden;
 }

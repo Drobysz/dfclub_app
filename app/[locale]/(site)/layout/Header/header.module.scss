@@ -1,0 +1,18 @@
+@reference "tailwindcss";
+
+.header {
+	@apply h-16 px-2 flex w-full
+		items-center justify-between;
+}
+
+.padding {
+	@apply px-8 pt-1;
+}
+
+.left_part {
+	@apply flex items-center gap-8;
+}
+
+.right_part {
+	@apply flex items-center gap-12;
+}

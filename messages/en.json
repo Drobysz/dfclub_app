@@ -1,0 +1,110 @@
+{
+  "header": {
+    "catalog": "Catalog",
+    "club": "About the club",
+    "education": "My training",
+    "enter": "Log in",
+    "exit": "Log out",
+    "finances": "Finance",
+    "help": "Help",
+    "lang": "Language",
+    "my_profile": "My profile",
+    "my_sub": "My subscription",
+    "partner": "Partner program",
+    "settings": "Settings"
+  },
+  "footer": {
+    "copyright": "© 2025 DF Club. All rights reserved.",
+    "legal": "DF Club is an educational community. It is not a financial organization.",
+    "sponsor": "About our sponsor DexNet",
+    "fb_contact": "Contact us",
+    "contacts": "Contacts",
+    "menu": "Menu",
+    "env1": "A space for learning,",
+    "env2": "growth and communication",
+
+    "club": "Club",
+    "catalog": "Catalog",
+    "finances": "Finance",
+    "partner": "Partnership"
+  },
+  "main": {
+    "faq_qst1": "How do I start learning on the platform?",
+    "faq_ans1": "To get started, register, choose a course, and pay for access. After that, you can immediately begin the lessons.",
+
+    "faq_qst2": "What is included in the course?",
+    "faq_ans2": "To get started, register, choose a course, and pay for access. After that, you can immediately begin the lessons.",
+
+    "faq_qst3": "How long does the training last?",
+    "faq_ans3": "To get started, register, choose a course, and pay for access. After that, you can immediately begin the lessons.",
+
+    "faq_qst4": "Can I take the course at my own pace?",
+    "faq_ans4": "To get started, register, choose a course, and pay for access. After that, you can immediately begin the lessons.",
+
+    "faq_qst5": "Are there trial lessons available?",
+    "faq_ans5": "To get started, register, choose a course, and pay for access. After that, you can immediately begin the lessons.",
+
+    "faq_qst6": "How does the partner program work?",
+    "faq_ans6": "To get started, register, choose a course, and pay for access. After that, you can immediately begin the lessons.",
+
+    "faq_subtitle": "We've compiled the key questions and prepared clear answers",
+    "faq_title1": "Have questions?",
+    "faq_title2": "We have",
+    "faq_title3": "answers",
+
+    "fb_title1": "Our participants'",
+    "fb_title2": "experiences",
+    "fb_subtitle": "Check out what our participants have to say—their reviews will help you decide if this course is right for you",
+
+    "sub_crd_serv_title": "What's included in the subscription:",
+    "sub_crd_s1": "Access to all courses on the platform",
+    "sub_crd_s2": "Practical assignments and quizzes",
+    "sub_crd_s3": "Additional resources",
+    "sub_crd_s4": "Updates and new courses",
+    "sub_crd_short_desc": "Courses, hands-on practice, and materials—all in one place",
+    "sub_crd_pricetag": "month",
+    "sub_crd_tag": "Subscription Pro",
+    "sub_crd_btn": "Buy subscribtion",
+    "sub_subtitle": "A subscription gives you access to the platform’s courses, exercises, and materials in a convenient format, without having to purchase each course individually",
+
+    "adv_completed": "Course completed",
+    "adv_crd_dk_subtitle": "Be online and chat in real time",
+    "adv_crd_down_short_subtitle": "Learn and grow with the best experts",
+    "adv_crd_down_short_title": "Knowledge and practice from professionals",
+    "adv_crd_up_short_subtitle": "Learn the methods that really work",
+    "adv_crd_up_short_title": "Relevant knowledge with a modern approach",
+    "adv_dk_crd_title": "Live broadcasts and live communication",
+    "adv_gr_crd_subtitle": "Master the material comfortably and sequentially",
+    "adv_gr_crd_title": "Flexible learning schedule",
+    "adv_lrg1": "Achieve more",
+    "adv_lrg2": "with the right",
+    "adv_lrg3": "knowledge and support",
+    "adv_sm": "We create an environment where everyone can learn, grow, and earn. We have no barriers, only opportunities and community support.",
+
+    "courses_btn": "Explore all courses",
+    "courses_subtitle": "Access to the best educational courses in one place. Learn new things at your own pace and with pleasure.",
+    "courses_title": "Our courses",
+
+    "enter": "Join the DF Club",
+    "iltr_1": "Learn from the experts",
+    "iltr_2": "and be inspired",
+    "iltr_3": "by strong people",
+    "iltr_desc": "A place where learning becomes the starting point for success",
+
+    "refcard1_animbtn_txt": "Create an account",
+    "refcard1_subtitle": "Create an account on the platform to get a personal link",
+    "refcard1_title": "Register",
+    "refcard2_subtitle": "Invite friends who want to learn and grow together with you",
+    "refcard2_title": "Share the link",
+    "refcard3_subtitle": "Each invited friend brings you bonuses",
+    "refcard3_title": "Earn bonuses",
+    "ref_subtitle1": "Share your personal link with friends and earn bonuses",
+    "ref_subtitle2": "for their participation in training",
+    "ref_title1": "Earn by helping",
+    "ref_title2": "friends to learn",
+
+    "sub_title1": "Unified access",
+    "sub_title2": "to the platform courses",
+    "success": "A place where learning becomes the starting point for success"
+  }
+}

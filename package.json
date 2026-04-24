@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently -k \"next dev\" \"i18nexus listen\"",
+    "dev": "next dev",
     "prebuild": "i18nexus pull",
     "build": "next build",
     "start": "next start",

@@ -1,0 +1,10 @@
+@reference "tailwindcss";
+
+.section {
+	@apply py-32
+		flex justify-center;
+}
+
+.container {
+	@apply w-full max-w-300 px-9;
+}

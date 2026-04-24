@@ -1,0 +1,11 @@
+@reference "tailwindcss";
+
+.prof_sect {
+    @apply flex gap-2 h-fit
+        px-4 py-3.5 border-b-2;
+}
+
+.prof_txt_data {
+    @apply flex flex-col
+        justify-between py-1;
+}

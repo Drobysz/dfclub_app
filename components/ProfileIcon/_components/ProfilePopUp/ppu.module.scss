@@ -1,0 +1,9 @@
+@reference "tailwindcss";
+
+.window {
+    @apply w-80 h-fit
+        flex flex-col rounded-3xl
+        absolute translate-y-[57%]
+        -translate-x-[45%]
+        bg-white overflow-hidden;
+}

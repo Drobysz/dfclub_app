@@ -20,6 +20,7 @@ export const Time = ({
 			prime_regular.className,
 			"text-gray-700"
 		)}>
+			{cardType == "incompleted" && "Осталось "} 
 			{hours}
 			{ cardType != "incompleted" &&
 				` | ${nbCourses} ${lw}`

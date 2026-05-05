@@ -1,0 +1,23 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: minmax(2rem, auto) minmax(270px, 1160px) minmax(2rem, auto);
+    grid-auto-rows: auto 1fr auto;
+    padding-bottom: 8rem;
+	grid-template-areas: 
+    ". header ."
+    ". courses ."
+    ". page_switcher .";
+}
+
+.header {
+    grid-area: header;
+    width: 100%;
+}
+
+.courses {
+    grid-area: courses;
+}
+
+.page_switcher {
+    grid-area: page_switcher;
+}

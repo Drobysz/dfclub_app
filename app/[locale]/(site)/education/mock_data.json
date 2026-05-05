@@ -1,0 +1,422 @@
+{
+  "data": {
+    "active": [
+    {
+      "id": 1,
+      "createdAt": "2025-05-01T10:00:00.000Z",
+      "category": "Психология",
+      "total_time": 205,
+      "time_completed": 154,
+      "cardType": "incompleted",
+      "rating": 4.7,
+      "complexity": "Легкая",
+      "nbCourses": 5,
+      "title": "Как масштабировать команду и прибыль без выгорания",
+      "liked": false,
+      "speaker": {
+        "name": "Анна Коваленко",
+        "occupation": "Директор в IT-компании"
+      }
+    },
+    {
+      "id": 2,
+      "createdAt": "2025-04-25T10:00:00.000Z",
+      "category": "Финансы",
+      "total_time": 180,
+      "time_completed": 90,
+      "cardType": "incompleted",
+      "rating": 4.8,
+      "complexity": "Средняя",
+      "nbCourses": 6,
+      "title": "Личные финансы: как управлять доходами и расходами",
+      "liked": true,
+      "speaker": {
+        "name": "Игорь Смирнов",
+        "occupation": "Финансовый консультант"
+      }
+    },
+    {
+      "id": 3,
+      "createdAt": "2025-04-18T10:00:00.000Z",
+      "category": "Бизнес",
+      "total_time": 240,
+      "time_completed": 60,
+      "cardType": "incompleted",
+      "rating": 4.6,
+      "complexity": "Сложная",
+      "nbCourses": 8,
+      "title": "Стратегия роста малого бизнеса",
+      "liked": false,
+      "speaker": {
+        "name": "Мария Орлова",
+        "occupation": "Основательница стартапа"
+      }
+    },
+    {
+      "id": 4,
+      "createdAt": "2025-04-12T10:00:00.000Z",
+      "category": "Маркетинг",
+      "total_time": 150,
+      "time_completed": 112,
+      "cardType": "incompleted",
+      "rating": 4.9,
+      "complexity": "Легкая",
+      "nbCourses": 4,
+      "title": "Продвижение продукта без большого бюджета",
+      "liked": true,
+      "speaker": {
+        "name": "Денис Волков",
+        "occupation": "Маркетолог"
+      }
+    },
+    {
+      "id": 5,
+      "createdAt": "2025-04-05T10:00:00.000Z",
+      "category": "Карьера",
+      "total_time": 210,
+      "time_completed": 84,
+      "cardType": "incompleted",
+      "rating": 4.5,
+      "complexity": "Средняя",
+      "nbCourses": 7,
+      "title": "Как построить карьерный план на год",
+      "liked": false,
+      "speaker": {
+        "name": "Елена Морозова",
+        "occupation": "HR-директор"
+      }
+    },
+    {
+      "id": 6,
+      "createdAt": "2025-03-29T10:00:00.000Z",
+      "category": "IT",
+      "total_time": 300,
+      "time_completed": 225,
+      "cardType": "incompleted",
+      "rating": 4.8,
+      "complexity": "Сложная",
+      "nbCourses": 10,
+      "title": "Основы продуктовой аналитики",
+      "liked": true,
+      "speaker": {
+        "name": "Алексей Романов",
+        "occupation": "Product Analyst"
+      }
+    },
+    {
+      "id": 7,
+      "createdAt": "2025-03-22T10:00:00.000Z",
+      "category": "Менеджмент",
+      "total_time": 195,
+      "time_completed": 39,
+      "cardType": "incompleted",
+      "rating": 4.4,
+      "complexity": "Средняя",
+      "nbCourses": 6,
+      "title": "Управление командой в условиях неопределенности",
+      "liked": false,
+      "speaker": {
+        "name": "Олег Павлов",
+        "occupation": "Операционный директор"
+      }
+    },
+    {
+      "id": 8,
+      "createdAt": "2025-03-15T10:00:00.000Z",
+      "category": "Продажи",
+      "total_time": 160,
+      "time_completed": 128,
+      "cardType": "incompleted",
+      "rating": 4.7,
+      "complexity": "Легкая",
+      "nbCourses": 5,
+      "title": "Как вести переговоры и закрывать сделки",
+      "liked": true,
+      "speaker": {
+        "name": "Наталья Белова",
+        "occupation": "Руководитель отдела продаж"
+      }
+    }
+    ],
+    "completed": [
+      {
+        "id": 9,
+        "createdAt": "2025-05-03T10:00:00.000Z",
+        "category": "Психология",
+        "total_time": 205,
+        "time_completed": 205,
+        "cardType": "finished",
+        "rating": 4.7,
+        "complexity": "Легкая",
+        "nbCourses": 5,
+        "title": "Как масштабировать команду и прибыль без выгорания",
+        "liked": false,
+        "speaker": {
+          "name": "Анна Коваленко",
+          "occupation": "Директор в IT-компании"
+        }
+      },
+      {
+        "id": 10,
+        "createdAt": "2025-04-27T10:00:00.000Z",
+        "category": "Финансы",
+        "total_time": 190,
+        "time_completed": 190,
+        "cardType": "finished",
+        "rating": 4.8,
+        "complexity": "Средняя",
+        "nbCourses": 6,
+        "title": "Инвестиции для начинающих",
+        "liked": true,
+        "speaker": {
+          "name": "Игорь Смирнов",
+          "occupation": "Финансовый консультант"
+        }
+      },
+      {
+        "id": 11,
+        "createdAt": "2025-04-20T10:00:00.000Z",
+        "category": "Бизнес",
+        "total_time": 230,
+        "time_completed": 230,
+        "cardType": "finished",
+        "rating": 4.6,
+        "complexity": "Сложная",
+        "nbCourses": 8,
+        "title": "Как запустить онлайн-проект с нуля",
+        "liked": false,
+        "speaker": {
+          "name": "Мария Орлова",
+          "occupation": "Основательница стартапа"
+        }
+      },
+      {
+        "id": 12,
+        "createdAt": "2025-04-13T10:00:00.000Z",
+        "category": "Маркетинг",
+        "total_time": 145,
+        "time_completed": 145,
+        "cardType": "finished",
+        "rating": 4.9,
+        "complexity": "Легкая",
+        "nbCourses": 4,
+        "title": "Контент-маркетинг для экспертов",
+        "liked": true,
+        "speaker": {
+          "name": "Денис Волков",
+          "occupation": "Маркетолог"
+        }
+      },
+      {
+        "id": 13,
+        "createdAt": "2025-04-06T10:00:00.000Z",
+        "category": "Карьера",
+        "total_time": 175,
+        "time_completed": 175,
+        "cardType": "finished",
+        "rating": 4.5,
+        "complexity": "Средняя",
+        "nbCourses": 5,
+        "title": "Как пройти собеседование уверенно",
+        "liked": false,
+        "speaker": {
+          "name": "Елена Морозова",
+          "occupation": "HR-директор"
+        }
+      },
+      {
+        "id": 14,
+        "createdAt": "2025-03-30T10:00:00.000Z",
+        "category": "IT",
+        "total_time": 260,
+        "time_completed": 260,
+        "cardType": "finished",
+        "rating": 4.8,
+        "complexity": "Сложная",
+        "nbCourses": 9,
+        "title": "Введение в управление IT-проектами",
+        "liked": true,
+        "speaker": {
+          "name": "Алексей Романов",
+          "occupation": "Product Analyst"
+        }
+      },
+      {
+        "id": 15,
+        "createdAt": "2025-03-23T10:00:00.000Z",
+        "category": "Менеджмент",
+        "total_time": 200,
+        "time_completed": 200,
+        "cardType": "finished",
+        "rating": 4.4,
+        "complexity": "Средняя",
+        "nbCourses": 6,
+        "title": "Делегирование без потери контроля",
+        "liked": false,
+        "speaker": {
+          "name": "Олег Павлов",
+          "occupation": "Операционный директор"
+        }
+      },
+      {
+        "id": 16,
+        "createdAt": "2025-03-16T10:00:00.000Z",
+        "category": "Продажи",
+        "total_time": 155,
+        "time_completed": 155,
+        "cardType": "finished",
+        "rating": 4.7,
+        "complexity": "Легкая",
+        "nbCourses": 5,
+        "title": "Скрипты продаж, которые не звучат как скрипты",
+        "liked": true,
+        "speaker": {
+          "name": "Наталья Белова",
+          "occupation": "Руководитель отдела продаж"
+        }
+      }
+    ],
+    "favorites": [
+      {
+        "id": 17,
+        "createdAt": "2025-04-25T10:00:00.000Z",
+        "category": "Финансы",
+        "total_time": 180,
+        "time_completed": 90,
+        "cardType": "incompleted",
+        "rating": 4.8,
+        "complexity": "Средняя",
+        "nbCourses": 6,
+        "title": "Личные финансы: как управлять доходами и расходами",
+        "liked": true,
+        "speaker": {
+          "name": "Игорь Смирнов",
+          "occupation": "Финансовый консультант"
+        }
+      },
+      {
+        "id": 18,
+        "createdAt": "2025-04-12T10:00:00.000Z",
+        "category": "Маркетинг",
+        "total_time": 150,
+        "time_completed": 112,
+        "cardType": "incompleted",
+        "rating": 4.9,
+        "complexity": "Легкая",
+        "nbCourses": 4,
+        "title": "Продвижение продукта без большого бюджета",
+        "liked": true,
+        "speaker": {
+          "name": "Денис Волков",
+          "occupation": "Маркетолог"
+        }
+      },
+      {
+        "id": 19,
+        "createdAt": "2025-03-29T10:00:00.000Z",
+        "category": "IT",
+        "total_time": 300,
+        "time_completed": 225,
+        "cardType": "incompleted",
+        "rating": 4.8,
+        "complexity": "Сложная",
+        "nbCourses": 10,
+        "title": "Основы продуктовой аналитики",
+        "liked": true,
+        "speaker": {
+          "name": "Алексей Романов",
+          "occupation": "Product Analyst"
+        }
+      },
+      {
+        "id": 20,
+        "createdAt": "2025-03-15T10:00:00.000Z",
+        "category": "Продажи",
+        "total_time": 160,
+        "time_completed": 128,
+        "cardType": "incompleted",
+        "rating": 4.7,
+        "complexity": "Легкая",
+        "nbCourses": 5,
+        "title": "Как вести переговоры и закрывать сделки",
+        "liked": true,
+        "speaker": {
+          "name": "Наталья Белова",
+          "occupation": "Руководитель отдела продаж"
+        }
+      },
+      {
+        "id": 21,
+        "createdAt": "2025-04-27T10:00:00.000Z",
+        "category": "Финансы",
+        "total_time": 190,
+        "cardType": "finished",
+        "rating": 4.8,
+        "complexity": "Средняя",
+        "nbCourses": 6,
+        "title": "Инвестиции для начинающих",
+        "liked": true,
+        "speaker": {
+          "name": "Игорь Смирнов",
+          "occupation": "Финансовый консультант"
+        }
+      },
+      {
+        "id": 22,
+        "createdAt": "2025-04-13T10:00:00.000Z",
+        "category": "Маркетинг",
+        "total_time": 145,
+        "cardType": "finished",
+        "rating": 4.9,
+        "complexity": "Легкая",
+        "nbCourses": 4,
+        "title": "Контент-маркетинг для экспертов",
+        "liked": true,
+        "speaker": {
+          "name": "Денис Волков",
+          "occupation": "Маркетолог"
+        }
+      },
+      {
+        "id": 23,
+        "createdAt": "2025-03-30T10:00:00.000Z",
+        "category": "IT",
+        "total_time": 260,
+        "cardType": "finished",
+        "rating": 4.8,
+        "complexity": "Сложная",
+        "nbCourses": 9,
+        "title": "Введение в управление IT-проектами",
+        "liked": true,
+        "speaker": {
+          "name": "Алексей Романов",
+          "occupation": "Product Analyst"
+        }
+      },
+      {
+        "id": 24,
+        "createdAt": "2025-03-16T10:00:00.000Z",
+        "category": "Продажи",
+        "total_time": 155,
+        "cardType": "finished",
+        "rating": 4.7,
+        "complexity": "Легкая",
+        "nbCourses": 5,
+        "title": "Скрипты продаж, которые не звучат как скрипты",
+        "liked": true,
+        "speaker": {
+          "name": "Наталья Белова",
+          "occupation": "Руководитель отдела продаж"
+        }
+      }
+    ]
+  },
+  "metadata": {
+      "limit": 6,
+      "counts": {
+        "active": 10,
+        "completed": 8,
+        "favourites": 8
+      }
+  }
+}

@@ -1,10 +1,10 @@
 .wrapper {
 	display: grid;
-	grid-template-columns: minmax(2rem, auto) minmax(320px, 1161px) minmax(2rem, auto);
+	grid-template-columns: minmax(2rem, auto) minmax(270px, 1440px) minmax(2rem, auto);
 	min-height: 100vh;
 	grid-auto-rows: auto 1fr auto;
 	grid-template-areas: 
-    "header header header"
+    ". header ."
     "main main main"
     "footer footer footer";
 }

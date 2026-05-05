@@ -1,4 +1,9 @@
-import { Golos_Text } from "next/font/google"; 
+import { Golos_Text, Inter } from "next/font/google"; 
+
+export const inter_regular = Inter({
+	weight: '400',
+	variable: '--font_inter_rg'
+});
 
 export const prime_semibold = Golos_Text({
 	weight: '600',

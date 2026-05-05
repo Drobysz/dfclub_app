@@ -1,0 +1,14 @@
+@reference "tailwindcss";
+
+.tab {
+	@apply relative z-10
+		cursor-pointer transition-colors
+		duration-500 px-6 flex justify-center
+		items-center gap-2;
+}
+
+.total_number_tag {
+	@apply rounded-full transition-colors
+		duration-400 ease-in-out text-[0.75rem]
+		h-6 w-6 flex justify-center items-center;
+}

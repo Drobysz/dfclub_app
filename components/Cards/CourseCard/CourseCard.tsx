@@ -1,4 +1,3 @@
-import { progress } from "framer-motion";
 import { CourseCardProps } from "./CourseCard.props";
 import {
 	Body,

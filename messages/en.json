@@ -106,5 +106,14 @@
     "sub_title1": "Unified access",
     "sub_title2": "to the platform courses",
     "success": "A place where learning becomes the starting point for success"
+  },
+  "my_courses": {
+    "my_courses": "My courses",
+    "active": "active",
+    "completed": "completed",
+    "favourites": "favourites",
+    "sort_by": "Sort by:",
+    "new": "New ones first",
+    "old": "Old ones first"
   }
 }

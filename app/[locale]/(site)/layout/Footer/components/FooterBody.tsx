@@ -13,10 +13,10 @@ export const FooterBody = ({
 	return (
 		<footer className={cn(
 			className,
-			styles.footer_markup,
+			styles.footer_grid,
 			prime_regular.className
 		)}>
-			<div className={styles.footer_view}>
+			<div className={styles.footer_inner_view}>
 				{children}
 			</div>
 		</footer>

@@ -3,7 +3,8 @@
 .body {
 	@apply w-10 h-10 flex
 		justify-center items-center
-		shrink-0 bg-white;
+		shrink-0 bg-white cursor-pointer
+		hover:scale-105 duration-200 transition-transform;
 }
 
 .like:active {

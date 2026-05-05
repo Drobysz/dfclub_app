@@ -1,15 +1,16 @@
 @reference "tailwindcss";
 
-.footer_markup {
+.footer_grid {
 	display: grid;
-	grid-template-columns: minmax(2rem, auto) minmax(320px, 1161px) minmax(2rem, auto);
-	grid-template-areas: ". footer .";
+	grid-template-columns: minmax(2rem, auto) minmax(320px, 1160px) minmax(2rem, auto);
+	grid-template-areas:
+	". footer .";
 	@apply bg-gray-900;
 }
 
-.footer_view {
+.footer_inner_view {
 	grid-area: footer;
-	@apply flex flex-col gap-24 py-16;
+	@apply flex flex-col py-16 gap-24;
 }
 
 .font_dark {

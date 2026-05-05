@@ -5,34 +5,25 @@ import {
     Cursor,
     Tab
 } from "./_components";
-
 import styles from "./nb.module.scss";
 import { CursorPosition } from "./Navbar.props";
-import { SiteContext } from "@/app/[locale]/(site)/context/site.context";
 import { useTranslations } from "next-intl";
-import { usePathname } from "@/i18n/navigation";
+import { EducationContext } from "../../../../context/education.context";
 
 export const NavBar = () => {
-    const { session } = useContext(SiteContext);
-    const t = useTranslations('header');
+    const t = useTranslations('my_courses');
 
-    const baseTabs = [
-        { href: '/courses', label: t('catalog') },
-        { href: '/',        label: t('club') },
-        { href: '/FAQ',     label: 'FAQ' },
-    ];
-    const authTabs = [
-        { href: '/',            label: t('club') },
-        { href: '/education',   label: t('education') },
-        { href: '/finances',    label: t('finances') },
-        { href: '/partnership', label: t('partner') },
+    const {
+        category,
+        categoryNumbers
+    } = useContext(EducationContext);
+
+    const tabs = [
+        { href: 'category=active',     label: t('active'),     tag: 'active',     total:  categoryNumbers.active },
+        { href: 'category=completed',  label: t('completed'),  tag: 'completed',  total:  categoryNumbers.completed },
+        { href: 'category=favourites', label: t('favourites'), tag: 'favourites', total:  categoryNumbers.favourites },
     ];
 
-    const tabs = session !== null
-        ? authTabs
-        : baseTabs;
-
-    const pathname = usePathname();
     const defaultCoord = { left: 0, width: 0 };
 
     const [position, setPosition] = useState<CursorPosition>(defaultCoord);
@@ -52,8 +43,9 @@ export const NavBar = () => {
                 {tabs.map((tab) => (
                         <Tab
                             key={tab.href}
-                            href={tab.href}
-                            isActive={pathname === tab.href}
+                            href={'education?' + tab.href}
+                            total={tab.total}
+                            isActive={category === tab.tag}
                             isBarHovered={hover}
                             setPosition={setPosition}
                             setPositionClicked={setPositionClicked}

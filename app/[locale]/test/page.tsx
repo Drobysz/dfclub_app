@@ -9,7 +9,7 @@ import {
 	Rating, SMbar, Comment, Loading,
 	SubscribeCard, CourseCard
 } from "@/components/index";
-import sm from "../../json/sm_list.json"
+import sm from "../../../json/sm_list.json"
 import { useState } from "react";
 
 export default function Home() {

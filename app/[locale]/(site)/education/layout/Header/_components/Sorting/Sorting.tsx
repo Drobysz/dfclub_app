@@ -20,7 +20,7 @@ export const Sorting = ()=> {
 
     const nextSorting = sorting == 'new' ? 'old' : 'new';
     const setSorting = ()=> {
-        router.push(`/education?category=${category}&page=${page}&sorting=${nextSorting}`);
+        router.push(`/education?category=${category}&sorting=${nextSorting}&page=${page}`);
     };
 
     return (

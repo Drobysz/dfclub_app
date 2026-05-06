@@ -1,10 +1,10 @@
 import { ReactNode } from "react";
 import {
     Header,
-    PagesPagination
+    EduPagesPagintaion
 } from "./layout/index";
 import { EducationContextProvider } from "./context/education.context";
-import styles from "./edu.module.scss";
+import styles from "./edu_grid.module.scss";
 
 export default function EducationLayout({
 	children
@@ -18,7 +18,7 @@ export default function EducationLayout({
         <div className={styles.courses} >
           {children}
         </div>
-        <PagesPagination className={styles.page_switcher}/>
+        <EduPagesPagintaion className={styles.page_switcher}/>
       </div>
     </EducationContextProvider>
 	)

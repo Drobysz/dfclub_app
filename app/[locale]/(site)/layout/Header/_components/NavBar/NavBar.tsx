@@ -22,7 +22,7 @@ export const NavBar = () => {
         { href: '/FAQ',     label: 'FAQ' },
     ];
     const authTabs = [
-        { href: '/',            label: t('club') },
+        { href: '/courses',            label: t('catalog') },
         { href: '/education',   label: t('education') },
         { href: '/finances',    label: t('finances') },
         { href: '/partnership', label: t('partner') },

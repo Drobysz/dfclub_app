@@ -1,2 +1,2 @@
 export * from "./Header/Header";
-export * from "./PagePagination/PagesPagination";
+export * from "./EduPagesPagintaion/EduPagesPagintaion";

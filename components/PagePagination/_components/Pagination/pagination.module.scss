@@ -1,0 +1,8 @@
+@reference "tailwindcss";
+
+.page {
+    @apply transition-all
+        duration-300 ease-in-out
+        hover:scale-110 px-3 py-1
+        rounded-full hover:bg-gray-400;
+}

@@ -1,0 +1,1 @@
+export type SortType = "popularity" | "nb_lessons" | "total_time";

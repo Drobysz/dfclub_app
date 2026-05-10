@@ -1,7 +1,7 @@
 {
   "header": {
     "catalog": "Catalog",
-    "club": "About the club",
+    "club": "About us",
     "education": "My training",
     "enter": "Log in",
     "exit": "Log out",
@@ -115,5 +115,79 @@
     "sort_by": "Sort by:",
     "new": "New ones first",
     "old": "Old ones first"
+  },
+  "filters": {
+    "category": {
+      "title": "Category",
+      "all": "Select all",
+      "finance": "Finance",
+      "crypto": "Cryptocurrencies and DeFi",
+      "money-psychology": "Money psychology",
+      "marketing": "Marketing and social media",
+      "self-development": "Self-development",
+      "show_all": "Show all"
+    },
+    "learningType": {
+      "title": "Learning type",
+      "all": "Select all",
+      "video": "Video lessons",
+      "practice": "Practical assignments",
+      "live": "Live streams"
+    },
+    "duration": {
+      "title": "Duration",
+      "all": "Select all",
+      "under-1h": "Up to 1 hour",
+      "1-5h": "1–5 hours",
+      "5-10h": "5–10 hours",
+      "over-10h": "More than 10 hours"
+    },
+    "difficulty": {
+      "title": "Difficulty level",
+      "all": "Select all",
+      "easy": "Easy",
+      "medium": "Medium",
+      "advanced": "Advanced"
+    }
+  },
+  "courses": {
+    "sort_by": "Sort by:",
+    "popularity": "Popularity",
+    "nb_lessons": "Number of lessons",
+    "total_time": "Total time",
+    
+    "sb_placeholder": "Find a course or topic",
+
+    "title": "Find a course for yourself"
+  },
+  "catalog": {
+    "titres": {
+      "category": "Category",
+      "learningType": "Learning type",
+      "duration": "Duration",
+      "difficulty": "Difficulty level"
+    },
+    "labels": {
+      "all": "Select all",
+      "finance": "Finance",
+      "crypto": "Cryptocurrencies & DeFi",
+      "money-psychology": "Money psychology",
+      "marketing": "Marketing & social media",
+      "self-development": "Self-development",
+      "video": "Video lessons",
+      "practice": "Practical assignments",
+      "live": "Live streams",
+      "under-1h": "Under 1 hour",
+      "1-5h": "1–5 hours",
+      "5-10h": "5–10 hours",
+      "over-10h": "More than 10 hours",
+      "easy": "Easy",
+      "medium": "Medium",
+      "advanced": "Advanced"
+    }
+  },
+  "breadcrumb": {
+    "main": "Main Page",
+    "catalog": "Catalog of courses"
   }
 }

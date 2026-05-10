@@ -7,7 +7,7 @@ import {
 	ActivityTag, CourseTag, ComplexTag,
 	DurationTag, TransactionTag, ProfileIcon,
 	Rating, SMbar, Comment, Loading,
-	SubscribeCard, CourseCard
+	SubscribeCard, CourseCard, SearchBar
 } from "@/components/index";
 import sm from "../../../json/sm_list.json"
 import { useState } from "react";
@@ -17,6 +17,17 @@ export default function Home() {
 
 	return (
 		<main className="flex flex-col gap-6 p-10">
+			<div className="flex flex-col gap-2">
+				<SearchBar
+					placeholder="Найдите тему или курс"
+				/>
+				<SearchBar
+					placeholder="Поиск"
+					colorMode="light"
+					widthMode="short"
+				/>
+			</div>
+
 			<div className="flex gap-6">
 				<CourseCard
 					title="Как масштабировать команду и прибыль без выгорания"

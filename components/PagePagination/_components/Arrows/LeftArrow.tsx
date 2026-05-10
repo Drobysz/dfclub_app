@@ -7,18 +7,26 @@ import cn from "classnames";
 import { ArrowProps } from "./Arrow.props";
 
 export const LeftArrow = ({
+    via,
     page,
-    link
+    link,
+    setPage
 }: ArrowProps)=> {
-    
     const router = useRouter();
+
+    const handleClick = ()=> {
+        if (page != 1) {
+            if (via == "link" && link) {
+                router.push(link + `&page=${page - 1}`)
+            } else if (via == "function" && setPage) {
+                setPage(p=> p - 1)
+            }
+        }
+    }
+
     return (
-        <span
-            onClick={()=> {
-                if (page != 1) {
-                    router.push(link + `&page=${page - 1}`)
-                }
-            }}
+        <button
+            onClick={handleClick}
             className={cn(
                 "rotate-180",
                 page == 1
@@ -27,6 +35,6 @@ export const LeftArrow = ({
             )}
         >
             <Arrow />
-        </span>
+        </button>
     )
 }

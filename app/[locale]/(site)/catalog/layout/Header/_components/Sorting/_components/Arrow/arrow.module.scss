@@ -1,0 +1,6 @@
+@reference "tailwindcss";
+
+.sorting_btn_arrow {
+    @apply transition-transform
+        duration-500 ease-in-out;
+}

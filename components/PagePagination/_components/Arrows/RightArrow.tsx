@@ -7,18 +7,27 @@ import cn from "classnames";
 import { ArrowProps } from "./Arrow.props";
 
 export const RightArrow = ({
+    via,
     page,
     pagesNum,
-    link
+    link,
+    setPage
 }: ArrowProps)=> {
     const router = useRouter();
+    
+    const handleClick = ()=> {
+        if (page != pagesNum) {
+            if (via == "link" && link) {
+                router.push(link + `&page=${page + 1}`)
+            } else if (via == "function" && setPage) {
+                setPage(p=> p + 1)
+            }
+        }
+    }
+
     return (
-        <span
-            onClick={()=> {
-                if (page != pagesNum) {
-                    router.push(link + `&page=${page + 1}`)
-                }
-            }}
+        <button
+            onClick={handleClick}
             className={cn(
                 page == pagesNum
                     ? styles.ghost_arrow
@@ -26,6 +35,6 @@ export const RightArrow = ({
             )}
         >
             <Arrow />
-        </span>
+        </button>
     )
 }

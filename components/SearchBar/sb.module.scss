@@ -1,0 +1,13 @@
+@reference "tailwindcss";
+
+.search_bar {
+    @apply bg-no-repeat bg-position-[center_left_0.65rem]
+        bg-size-[1.2rem] bg-[url(/search.svg)]
+        py-2 pl-12 pr-6 rounded-4xl text-gray-600
+        h-fit focus:outline-1;
+}
+
+.shadow_bg {
+    box-shadow:
+		0px 0px 30px -8px rgba(0, 0, 0, 0.35);
+}

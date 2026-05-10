@@ -9,7 +9,7 @@ export interface SpeakerProfile {
 
 export interface CourseCardData {
 	id: number;
-	createdAt: string;
+	createdAt?: string;
 	category: string;
 	total_time: number;
 	time_completed?: number;

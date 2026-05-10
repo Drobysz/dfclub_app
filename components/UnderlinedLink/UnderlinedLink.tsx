@@ -1,12 +1,14 @@
-import Link from "next/link";
+
 import cn from "classnames";
 import styles from "./ul.module.scss";
 import { UnderlinedLinkProps } from "./UnderlinedLink.props";
+import Link from "next/link";
 
 export const UnderlinedLink = ({
 	className,
 	href,
 	children,
+	colorLine = "light",
 	...props
 }: UnderlinedLinkProps)=> {
 	return (
@@ -19,7 +21,13 @@ export const UnderlinedLink = ({
 		>
 			<Link href={href}>
 				<span>{children}</span>
-				<span className={styles.underline}/>
+				<span className={cn(
+					styles.underline,
+					styles.underline, {
+						["bg-white"]: colorLine == "light",
+						["bg-gray-700"]: colorLine == "dark"
+					}
+				)}/>
 			</Link>
 		</li>
 	)

@@ -2,7 +2,7 @@
 
 .underline {
 	width: 0%;
-	@apply block h-px bg-white
+	@apply block h-px
 		cursor-pointer duration-300
 		transition-all;
 }

@@ -9,21 +9,23 @@ export default function EduPage () {
     const { visibleCourses } = useContext(EducationContext);
 
     return (
-        <ul className="grid grid-cols-3 gap-10 overflow-y-scroll p-4 pb-12">
-            {visibleCourses.map(c=> (
-                <CourseCard
-                    key={c.id}
-                    cardType={c.cardType as cardTypes}
-                    speaker={c.speaker}
-                    nbCourses={c.nbCourses}
-                    rating={c.rating}
-                    title={c.title}
-                    total_time={c.total_time}
-                    time_completed={"time_completed" in c ? c.time_completed : undefined}
-                    complexity={c.complexity as complexities}
-                    liked={c.liked}
-                />
-            ))}
-        </ul>
+        <section className="flex flex-col gap-16">
+            <ul className="grid grid-cols-3 gap-10 overflow-y-scroll p-4 pb-12">
+                {visibleCourses.map(c=> (
+                    <CourseCard
+                        key={c.id}
+                        cardType={c.cardType as cardTypes}
+                        speaker={c.speaker}
+                        nbCourses={c.nbCourses}
+                        rating={c.rating}
+                        title={c.title}
+                        total_time={c.total_time}
+                        time_completed={"time_completed" in c ? c.time_completed : undefined}
+                        complexity={c.complexity as complexities}
+                        liked={c.liked}
+                    />
+                ))}
+            </ul>
+        </section>
     )
 }

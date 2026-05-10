@@ -25,3 +25,6 @@ export * from "./Lamp/Lamp";
 export * from "./LiquidGlass/LiquidGlass";
 export * from "./Cards/CourseCard/CourseCard";
 export * from "./PagePagination/PagesPagination";
+export * from "./SearchBar/SearchBar";
+export * from "./UnderlinedLink/UnderlinedInnerLink";
+export * from "./Breadcrumbs/Breadcrumbs";

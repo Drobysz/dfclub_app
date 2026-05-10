@@ -17,6 +17,7 @@ export const EduPagesPagintaion = ({
     } = useContext(EducationContext);
     return (
         <PagesPagination
+            via="link"
             className={className}
             page={page}
             pagesNum={pages}

@@ -1,0 +1,19 @@
+@reference "tailwindcss";
+
+.breadcrumbs_list {
+    @apply flex items-center gap-2
+        -translate-x-5;
+}
+
+.breadcrumbs_list li {
+    @apply text-gray-600;
+}
+
+.breadcrumbs_list li:first-of-type > :first-child {
+    @apply opacity-0;
+}
+
+.breadcrumbs_list > :last-child {
+    @apply text-gray-900 pointer-events-none;
+}
+

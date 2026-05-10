@@ -17,19 +17,18 @@ export const NavBar = () => {
     const t = useTranslations('header');
 
     const baseTabs = [
-        { href: '/courses', label: t('catalog') },
         { href: '/',        label: t('club') },
-        { href: '/FAQ',     label: 'FAQ' },
+        { href: '/catalog', label: t('catalog') },
+        // { href: '/FAQ',     label: 'FAQ' },
     ];
     const authTabs = [
-        { href: '/courses',            label: t('catalog') },
         { href: '/education',   label: t('education') },
         { href: '/finances',    label: t('finances') },
         { href: '/partnership', label: t('partner') },
     ];
 
     const tabs = session !== null
-        ? authTabs
+        ? [...baseTabs, ...authTabs]
         : baseTabs;
 
     const pathname = usePathname();

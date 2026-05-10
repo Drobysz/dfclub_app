@@ -1,0 +1,20 @@
+@reference "tailwindcss";
+
+.sort_list {
+    box-shadow:
+		0px 0px 30px -8px rgba(0, 0, 0, 0.35);
+    @apply absolute rounded-3xl
+        flex flex-col -translate-x-[50%]
+        overflow-hidden bg-white
+        left-[50%] w-50;
+}
+
+.sort_list_el {
+    @apply px-4 py-2 transition-colors text-gray-800
+        duration-200 hover:bg-gray-100 border-b
+        border-b-gray-300 cursor-pointer text-center;
+}
+
+.sort_list > :last-child {
+    @apply border-b-0;
+}

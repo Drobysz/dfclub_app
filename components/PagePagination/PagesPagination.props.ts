@@ -1,9 +1,10 @@
 import { Dispatch } from "react";
 
-export interface ArrowProps {
+export interface PagesPaginationProps {
     via: "link" | "function",
     link?: string;
-    page: number;
-    pagesNum?: number;
     setPage?: Dispatch<React.SetStateAction<number>>,
+    page: number;
+    pagesNum: number;
+    className?: string;
 }
